@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hitung">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <!--  UMUR-->
+        <TextView
+            android:id="@+id/txView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:text="Umur"
+            android:textColor="#060606"
+            android:textSize="19sp"/>
+
+        <EditText
+            android:id="@+id/txUmur"
+            android:layout_width="360dp"
+            android:layout_height="35dp"
+            android:inputType="number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="#e6e1e1"/>
+
+        <!--  GENDER-->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Gender"
+            android:textColor="#060606"
+            android:textSize="19sp"/>
+
+        <RadioGroup
+            android:id="@+id/Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/laki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Laki-Laki"
+                android:textSize="18sp"/>
+
+            <RadioButton
+                android:id="@+id/wanita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:text="Wanita"
+                android:textSize="18sp"/>
+
+        </RadioGroup>
+
+        <!--Tinggi-->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Tinggi"
+            android:textColor="#060606"
+            android:textSize="19sp"/>
+
+        <EditText
+            android:id="@+id/txTinggi"
+            android:layout_width="360dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="#e6e1e1"/>
+
+        <!--Berat-->
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Berat"
+            android:textColor="#060606"
+            android:textSize="19sp"/>
+
+        <EditText
+            android:id="@+id/txBerat"
+            android:layout_width="360dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="#e6e1e1"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btnHitung"
+            android:layout_width="341dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            app:cardBackgroundColor="#D01FD0"
+            app:cardCornerRadius="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Hitung"
+                    android:textColor="#fff"
+                    android:textSize="21sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="150px"
+            android:textColor="#060606"
+            android:textSize="19sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
